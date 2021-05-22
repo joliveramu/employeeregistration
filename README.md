@@ -8,5 +8,6 @@ This application uses the following frameworks:
 
 > In order to install the above mentioned frameworks/libraries, folder where you have download the project, type in your command line `npm install` to install all of it.
 
-## Using this application
-In order for you to use the application, you must first import the `db_employee.sql` file to your local mysql database (used XAMPP's Maria DB during the development of the application).
+## Installing this application
+- In order for you to use the application, you must first import the `db_employee.sql` file to your local mysql database (used XAMPP's Maria DB during the development of the application).
+- Once that you have installed all the required frameworks/libraries and data, go to your command line/terminal and type `nodemon index.js`. Once done, you can go to any browser of your preference, and type in the url `localhost:3000` with that, you can have the app running.
