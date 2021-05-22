@@ -11,7 +11,7 @@ This application uses the following frameworks:
 - body-parser
 - ejs
 
-> In order to install the above mentioned frameworks/libraries, folder where you have download the project, type in your command line `npm install` to install all of it.
+> In order to install the above mentioned frameworks/libraries, Navigate to the folder where you have downloaded the project, type in your command line `npm install` to install all of the dependecies needed by the application.
 
 The application was developed by the following applications:
 - Visual Studio Code
