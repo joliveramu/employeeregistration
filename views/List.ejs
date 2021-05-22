@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>List of Employees</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class = "container-fluid">
+    <div class="table-data">
+<h2>Registered Employees</h2>
+<a href ="/AdminLogin">Logout</a>
+<table class = "table">
+    <tr>
+        <th>ID Number</th>
+        <th>First Name</th>
+        <th>Middle Name</th>
+        <th>Last Name</th>
+        <th>Email Address</th>
+        <th>Contact Number</th>
+        <th>Status</th>
+        <th>Approved?</th>
+
+    </tr>
+    
+    <%
+    if(userData.length!=0){
+    var i=1;
+    userData.forEach(function(data){
+    %>
+    <tr>
+        <td><%=i; %></td>
+        <td><%=data.firstname %></td>
+        <td><%=data.middlename %></td>
+        <td><%=data.lastname %></td>
+        <td><%=data.emailadd %></td>
+        <td><%=data.contactnumber %></td>
+        <td><%=data.approval %></td>
+        <td><a href="/Approval/<%=data.employeeid%>">   Approve</a></td>
+
+    </tr>
+    <%  i++; }) %>
+    <% } else{ %>
+        <tr>
+            <td colspan="7">No Data Found</td>
+        </tr>
+    <% } %>
+</table>
+    </div>
+</body>
+</html>
